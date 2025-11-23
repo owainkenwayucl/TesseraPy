@@ -9,4 +9,4 @@ setup(name="TesseraPy",
       author_email="o.kenway@ucl.ac.uk",
       url="https://github.com/owainkenwayucl/TesseraPy",
       packages=["TesseraPy"],
-      install_requires=["Pillow"])
+      install_requires=["Pillow","cffi"])
