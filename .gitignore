@@ -205,3 +205,10 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Messing about folder
+junk/
+garbage/
+
+# Vim temp files
+*.swp
