@@ -41,7 +41,7 @@ class tesseract:
 		_ = self.lib.TessBaseAPIInit3(self.api, TESSERACT_DATA, TESSERACT_LANGUAGE)
 
 	def get_text(self, image):
-		if not isinstance(image, Image):
+		if not isinstance(image, Image.Image):
 			raise TypeError("Image is not a PIL image.")
 		image = image.convert("RGB")
 		width, height = image.size
