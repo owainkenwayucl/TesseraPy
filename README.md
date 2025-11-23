@@ -2,7 +2,7 @@
 
 TesseraPy provides a minimal wrapper for HP/Google's Tesseract OCR library, making use of CFFI instead of running the `tesseract` executable like other Python wrappers.
 
-Currently (v0.1.4), it is extremely minimal having a class called `tesseract` with a single method `decode_image` which takes a PIL image as an argument and returns the text in the image.
+Currently (v0.1.4), it is extremely minimal having a class called `tesseract` with a single method `get_text()` which takes a PIL image as an argument and returns the text in the image.
 
 So e.g.
 
