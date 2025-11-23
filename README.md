@@ -28,3 +28,13 @@ To install a specific version, e.g. the first release, v0.1.4
 pip install git+https://github.com/owainkenwayucl/TesseraPy.git@v0.1.4
 ```
 
+## Configuration
+
+You can control where TesseraPy looks for the various parts of Tesseract with the following environment variable:
+
+* `TESSERACT_LIBRARY` - path to the Tesseract library - default: `/lib64/libtesseract.so.5.3.4`
+* `TESSERACT_DATA` - path to Tesseract data files - default: `/usr/share/tesseract/tessdata/`
+* `TESSERACT_ENCODING` - encoding - default: `utf-8`
+* `TESSERACT_LANGUAGE` - language - default: `eng`
+
+The defaults are those of the development platform - AlmaLinux 10.
