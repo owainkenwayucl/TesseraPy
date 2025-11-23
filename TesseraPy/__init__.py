@@ -48,7 +48,7 @@ class tesseract:
 		_ = self.lib.TessBaseAPISetImage(self.api, image.tobytes(), width, height, 3, 3*width)
 		_ = self.lib.TessBaseAPIRecognize(self.api, self.ffi.NULL)
 		text_ptr = self.lib.TessBaseAPIGetUTF8Text(self.api)
-		text = ffi.string(text_ptr).decode(TESSERACT_ENCODING)
+		text = self.ffi.string(text_ptr).decode(TESSERACT_ENCODING)
 
 		self.lib.TessDeleteText(text_ptr)
 
