@@ -2,7 +2,7 @@
 
 from distutils.core import setup
 
-setup(name="TesseraPy".
+setup(name="TesseraPy",
       version="0.1",
       description="Minimal Python CFFI bindings for Tesseract", 
       author="Dr Owain Kenway",
